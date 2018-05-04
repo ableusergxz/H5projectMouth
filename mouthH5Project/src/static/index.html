@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>家具网</title>
+    <link rel="stylesheet" href="../static/less/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-top">
+                <span> < </span>
+                <span>居家</span>
+                <span><img src="../static/images/seach.png" alt=""></span>
+            </div>
+            <!-- 导航栏 -->
+            <div class="navlist" id="wrapper">
+                <ul class="nav">
+                    <script id="navlist" type="text/x-handlebars-template">
+                        {{#each data}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </script>
+                </ul>
+            </div>
+        </header>
+        <section class="section">
+            <div class="section-box">
+                <div class="cpjt">
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list1.png" alt=""></a></span>
+                        <span>即将上市</span>
+                        <span>Paisley欧式天丝四件套</span>
+                        <span>￥599</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login2.html"><img src="../static/images/list2.png" alt=""></a></span>
+                        <span></span>
+                        <span>透气呼吸纱四件套四件套</span>
+                        <span>￥459</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list1.png" alt=""></a></span>
+                        <span>满赠</span>
+                        <span>唤自然.迷雾雨林四件套</span>
+                        <span>￥399</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login2.html"><img src="../static/images/list2.png" alt=""></a></span>
+                        <span></span>
+                        <span>唤自然.仲夏椰香四件套</span>
+                        <span>￥299</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list1.png" alt=""></a></span>
+                        <span>即将上市</span>
+                        <span>Paisley欧式天丝四件套</span>
+                        <span>￥599</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list2.png" alt=""></a></span>
+                        <span></span>
+                        <span>透气呼吸纱四件套四件套</span>
+                        <span>￥599</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list1.png" alt=""></a></span>
+                        <span>满赠</span>
+                        <span>唤自然.迷雾雨林四件套</span>
+                        <span>￥399</span>
+                    </div>
+
+                </div>
+                <!-- 被枕 -->
+                <div class="bz">
+                    <div class="classify">
+                        <span><a href="../static/login.html"><img src="../static/images/list1.png" alt=""></a></span>
+                        <span>即将上市</span>
+                        <span>Paisley欧式天丝四件套</span>
+                        <span>￥599</span>
+                    </div>
+                    <div class="classify">
+                        <span><a href="../static/login2.html"><img src="../static/images/list2.png" alt=""></a></span>
+                        <span></span>
+                        <span>透气呼吸纱四件套四件套</span>
+                        <span>￥459</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+<script src="../static/js/lib/require.js"></script>
+<script>
+    require(["../static/js/config"], function() {
+        require(["main"])
+    })
+</script>
+
+</html>

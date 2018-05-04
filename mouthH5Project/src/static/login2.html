@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../static/less/login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <span> <a href="http://localhost:5533"> < </a></span>
+            <div class="listbox">
+                <ul class="listnav">
+                    <li class="sp">商品</li>
+                    <li class="xq">详情</li>
+                    <li class="cp">测评</li>
+                </ul>
+            </div>
+        </header>
+        <section class="section">
+            <div class="page12">
+                <div class="page1">
+                    <img src="../static/images/xq1.png" alt="">
+                </div>
+                <div class="page2">
+                    <ul style="width: 100%;height: 250px;">
+                        <li style="width: 100%;height: 40px;line-height: 40px;">适用季节 夏季、春季</li>
+                        <li style="width: 100%;height: 40px;line-height: 40px;">款式 床单式</li>
+                        <li style="width: 100%;height: 40px;line-height: 40px;">面料 天丝</li>
+                        <li style="width: 100%;height: 40px;line-height: 40px;">风格 复古、美式、欧式</li>
+                        <li style="width: 100%;height: 40px;line-height: 40px;">工艺 AB版</li>
+                        <li style="width: 100%;height: 40px;line-height: 40px;">尺寸规格 尺寸1.5床：被套200*230cm/枕套</li>
+                    </ul>
+                </div>
+                <div class="page3">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="../static/js\/lib/jquery-1.10.1.min.js"></script>
+<script>
+    $(function() {
+        $(".sp").on("click", function() {
+            $(".page12").css("transform", "translateX(0)");
+            $(".cp").css("color", "#000");
+            $(this).css("color", "red");
+        })
+        $(".xq").on("click", function() {
+            $(".page12").css("transform", "translateX(-50%)");
+            $(".sp").css("color", "#000");
+            $(this).css("color", "red");
+        })
+        $(".cp").on("click", function() {
+            $(".page12").css("transform", "translateX(-100%)");
+            $(".xq").css("color", "#000");
+            $(this).css("color", "red");
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.wrap .header .header-top {
+  width: 100%;
+  height: 40px;
+}
+.wrap .header .header-top span {
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+}
+.wrap .header .header-top span:nth-child(1) {
+  width: 10%;
+  height: 30px;
+  font-size: 18px;
+}
+.wrap .header .header-top span:nth-child(2) {
+  width: 80%;
+  height: 30px;
+  font-size: 18px;
+}
+.wrap .header .header-top span:nth-child(1) {
+  flex: 1;
+}
+.wrap .header .header-top span:nth-child(1) img {
+  width: 30px;
+  height: 30px;
+}
+.wrap .header .navlist {
+  width: 100%;
+  height: 50px;
+}
+.wrap .header .navlist .nav {
+  width: 200%;
+  height: 50px;
+  display: flex;
+}
+.wrap .header .navlist .nav li {
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.wrap .header .navlist .nav li:nth-child(1) {
+  border-bottom: 2px solid yellow;
+}
+.wrap .section {
+  flex: 1;
+  overflow-x: hideen;
+}
+.wrap .section .section-box {
+  width: 600%;
+  height: 100%;
+}
+.wrap .section .section-box .cpjt {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.wrap .section .section-box .cpjt .classify {
+  width: 220px;
+  height: 300px;
+  float: left;
+}
+.wrap .section .section-box .cpjt .classify span {
+  display: inline-block;
+}
+.wrap .section .section-box .cpjt .classify span:nth-child(2) {
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.wrap .section .section-box .cpjt .classify span:nth-child(4) {
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.wrap .section .section-box .bz {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
